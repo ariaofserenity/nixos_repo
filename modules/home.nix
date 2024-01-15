@@ -10,5 +10,5 @@ in
     home.username = "aria";
     home.homeDirectory = "/home/aria";
     home.stateVersion = "23.11";
- };
+
 }
