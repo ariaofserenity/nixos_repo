@@ -17,32 +17,12 @@
        pkgs = import nixpkgs;
     in {
      nixosConfigurations = {
-        
-   environment.systemPackages = with pkgs; [
-    fail2ban
-    python3
-    git
-    killall
-    wget
-    curl
-  ];
-
-  services.fail2ban = {
-    enable = true;
-    maxretry = 5;
-    bantime = "24h";
-    bantime-increment = {
-      enable = true;
-      multipliers = "1 2 4 8 16 32 64";
-      maxtime = "168h";
-      overalljails = true;
-    };
-  };
       
       "web01" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
          modules = [ ./hosts/web01
+         ./modules/base-config.nix
 
 
 	    home-manager.nixosModules.home-manager
