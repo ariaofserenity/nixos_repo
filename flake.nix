@@ -28,7 +28,7 @@
       
       "dev01" = nixpkgs.lib.nixosSystem {
          inherit system;
-         specialArgs = {inherit user;};
+         specialArgs = {inherit user; inherit basePkgs;};
          modules = [ ./hosts/dev01
          ./modules/base-config.nix
 
