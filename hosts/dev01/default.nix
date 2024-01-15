@@ -1,4 +1,4 @@
-{ config, lib, pkgs, basePkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -11,10 +11,9 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
-    git
+    killall
     nginx
-  ]
-   ++ basePkgs;
+  ];
 
   
   system.stateVersion = "23.11"; # Did you read the comment?

@@ -15,20 +15,12 @@
        user = "aria";
        system = "x86_64-linux";
        pkgs = import nixpkgs;
-       basePkgs = with pkgs; [
-          fail2ban
-          python3
-          git
-          killall
-          wget
-          curl
-      ];
     in {
      nixosConfigurations = {
       
       "dev01" = nixpkgs.lib.nixosSystem {
          inherit system;
-         specialArgs = {inherit user; inherit basePkgs;};
+         specialArgs = {inherit user;};
          modules = [ ./hosts/dev01
          ./modules/base-config.nix
 
