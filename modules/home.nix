@@ -10,12 +10,5 @@ in
     home.username = "aria";
     home.homeDirectory = "/home/aria";
     home.stateVersion = "23.11";
-    
-    programs.bash = {
-    enable = true;
-    shellAliases = {
-	switchconf = "sudo nixos-rebuild switch --flake .#nixos-servers";
-        upgradeconf = "sudo nixos-rebuild switch --upgrade --flake .#nixos-servers";
-   };
  };
 }
