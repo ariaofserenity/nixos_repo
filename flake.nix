@@ -18,10 +18,10 @@
     in {
      nixosConfigurations = {
       
-      "web01" = nixpkgs.lib.nixosSystem {
+      "dev01" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/web01
+         modules = [ ./hosts/dev01
          ./modules/base-config.nix
 
 
