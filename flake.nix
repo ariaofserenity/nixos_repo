@@ -10,13 +10,14 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, pkgs, ... }:
+  outputs = { self, nixpkgs, home-manager, ... }:
     let 
        user = "aria";
        system = "x86_64-linux";
+       pkgs = import nixpkgs;
     in {
      nixosConfigurations = {
-
+        
    environment.systemPackages = with pkgs; [
     fail2ban
     python3
