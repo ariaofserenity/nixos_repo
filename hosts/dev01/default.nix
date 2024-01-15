@@ -18,7 +18,7 @@
   services.nginx = {
     enable = true;
     
-    virtualHosts "/" = {
+    virtualHosts."/" = {
         root = "/var/www/browser";
     }
   };
