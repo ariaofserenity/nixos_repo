@@ -11,7 +11,7 @@
   networking.networkmanager.enable = true;
 
   environment.systemPackages = with pkgs; [
-    httpd
+    nginx
   ];
   
   system.stateVersion = "23.11"; # Did you read the comment?
