@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, pkgs, ... }:
     let 
        user = "aria";
        system = "x86_64-linux";
