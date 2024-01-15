@@ -23,15 +23,6 @@
                 dates = "weekly";
                 options = "--delete-older-than 7d";
         };
-        
-  environment.systemPackages = with pkgs; [
-    fail2ban
-    python3
-    git
-    killall
-    wget
-    curl
-  ];
 
   services.fail2ban = {
     enable = true;

@@ -15,6 +15,14 @@
        user = "aria";
        system = "x86_64-linux";
        pkgs = import nixpkgs;
+       basePkgs = with pkgs; [
+          fail2ban
+          python3
+          git
+          killall
+          wget
+          curl
+      ];
     in {
      nixosConfigurations = {
       
