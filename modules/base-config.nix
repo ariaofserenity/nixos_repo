@@ -12,8 +12,6 @@
     enable = true;
     settings.PasswordAuthentication = false;
   };
-  
-  networking.firewall.allowedTCPPorts = [ 80 443 22 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   
 

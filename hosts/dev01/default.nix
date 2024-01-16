@@ -9,7 +9,8 @@
 
   networking.hostName = "web01";
   networking.networkmanager.enable = true;
-
+  networking.firewall.allowedTCPPorts = [ 80 443 22 ];
+  
   environment.systemPackages = with pkgs; [
     killall
     nginx
