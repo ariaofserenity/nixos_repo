@@ -10,8 +10,6 @@
   networking.hostName = "web01";
   networking.networkmanager.enable = true;
   networking.firewall.allowedTCPPorts = [ 80 443 22 ];
-
-  virtualisation.docker.enable = true;
   
   environment.systemPackages = with pkgs; [
     killall
