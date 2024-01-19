@@ -15,16 +15,7 @@
   
   environment.systemPackages = with pkgs; [
     killall
-    nginx
   ];
-
-  services.nginx = {
-    enable = true;
-    
-    virtualHosts."/" = {
-        root = "/var/www/browser";
-    };
-  };
 
   fileSystems."/mnt/common" = {
     device = "192.168.2.14:/mnt/d01/common";
