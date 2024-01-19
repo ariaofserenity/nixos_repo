@@ -7,7 +7,7 @@
       ./../../modules/users.nix
     ];
 
-  networking.hostName = "web01";
+  networking.hostName = "core01";
   networking.networkmanager.enable = true;
   
   system.stateVersion = "23.11"; # Did you read the comment?
