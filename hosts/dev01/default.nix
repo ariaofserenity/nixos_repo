@@ -7,7 +7,7 @@
       ./../../modules/users.nix
     ];
 
-  networking.hostName = "web01";
+  networking.hostName = "dev01";
   networking.networkmanager.enable = true;
   networking.firewall.allowedTCPPorts = [ 80 443 22 ];
   
