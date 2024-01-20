@@ -1,5 +1,5 @@
 {
-  description = "Aria's flake";
+  description = "home lab config";
 
   inputs = {
 
@@ -22,6 +22,24 @@
          inherit system;
          specialArgs = {inherit user;};
          modules = [ ./hosts/dev01
+         ./modules/base-config.nix
+
+
+	    home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.extraSpecialArgs = {inherit user;};
+            home-manager.users.${user} = import ./modules/home.nix;
+        }
+       ]; 
+      };
+         
+        "dev02" = nixpkgs.lib.nixosSystem {
+         inherit system;
+         specialArgs = {inherit user;};
+         modules = [ ./hosts/dev02
          ./modules/base-config.nix
 
 
