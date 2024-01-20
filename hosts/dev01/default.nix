@@ -14,12 +14,11 @@
   
   environment.systemPackages = with pkgs; [
     killall
+    k3s
   ];
 
   services.k3s.enable = true;
   services.k3s.role = "server";
-  
-  environment.systemPackages = [ pkgs.k3s ];
 
   fileSystems."/mnt/common" = {
     device = "192.168.2.14:/mnt/d01/common";
