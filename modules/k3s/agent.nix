@@ -7,5 +7,5 @@
   environment.systemPackages = with pkgs; [ k3s ];
 
   services.k3s.enable = true;
-  services.k3s.role = "node";
+  services.k3s.role = "agent";
 }
