@@ -1,5 +1,5 @@
 creation_rules:
   - path_regex: modules/k3s/secrets.yaml
     key_groups:
-      age:
+      - age:
         - age1f6krx9zxft5lwn9va4gy4e2hl8x3eahdcyn6f32way4cvep32v7qpkch6a
