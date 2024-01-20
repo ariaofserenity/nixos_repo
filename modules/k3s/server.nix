@@ -5,7 +5,10 @@
   networking.firewall.allowedUDPPorts = [ 8472 ];
 
   environment.systemPackages = with pkgs; [ k3s ];
-
-  services.k3s.enable = true;
-  services.k3s.role = "server";
+  
+    services.k3s = {
+    enable = true;
+    role = "server";
+    clusterInit = true;
+  };
 }
