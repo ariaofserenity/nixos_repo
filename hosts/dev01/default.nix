@@ -5,28 +5,16 @@
     [ 
       ./hardware-configuration.nix
       ./../../modules/users.nix
+      ./../../modules/k3s/server.nix
+      ./../../modules/nfs/client.nix
     ];
 
   networking.hostName = "dev01";
   networking.networkmanager.enable = true;
-  networking.firewall.allowedTCPPorts = [ 80 443 22 6443 ];
-  networking.firewall.allowedUDPPorts = [ 8472 ];
   
   environment.systemPackages = with pkgs; [
     killall
-    k3s
   ];
-
-  services.k3s.enable = true;
-  services.k3s.role = "server";
-
-  fileSystems."/mnt/common" = {
-    device = "192.168.2.14:/mnt/d01/common";
-    fsType = "nfs";
-    options = ["x-systemd.automount" "noauto" ];
-  };
-
-
 
   system.stateVersion = "23.11"; # Did you read the comment?
 
