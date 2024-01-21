@@ -14,6 +14,6 @@
     enable = true;
     role = "agent";
     serverAddr = "https://192.168.2.144:6443";
-    #tokenFile = config.sops.secrets.k3s_server_token.path;
+    tokenFile = config.sops.secrets.k3s_server_token.path;
   };
 }
