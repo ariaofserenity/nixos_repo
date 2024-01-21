@@ -6,9 +6,18 @@
 
   environment.systemPackages = with pkgs; [ k3s ];
   
+  sops.secrets.k3s_server_token = {
+    sopsFile = ./secrets.yaml;
+  };
+
+  sops = {
+    age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
+  };
+
     services.k3s = {
     enable = true;
     role = "server";
+    tokenFile = config.sops.secrets.k3s_server_token.path;
     clusterInit = true;
   };
 }
