@@ -14,7 +14,7 @@
     age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
   };
 
-    services.k3s = {
+  services.k3s = {
     enable = true;
     role = "server";
     tokenFile = config.sops.secrets.k3s_server_token.path;
