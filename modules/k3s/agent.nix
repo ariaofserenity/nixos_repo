@@ -6,14 +6,14 @@
 
   environment.systemPackages = with pkgs; [ k3s ];
 
-  #sops.secrets.k3s_token = {
-  #  sopsFile = ./secrets.yaml;
-  #};
+  sops.secrets.k3s_server_token = {
+    sopsFile = ./secrets.yaml;
+  };
 
   services.k3s = {
     enable = true;
     role = "agent";
     serverAddr = "https://192.168.2.144:6443";
-    tokenFile = config.sops.secrets.k3s_token.path;
+    tokenFile = config.sops.secrets.k3s_server_token.path;
   };
 }
