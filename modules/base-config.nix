@@ -28,6 +28,7 @@
     git
     wget
     curl
+    age
   ];
 
   virtualisation.docker.enable = true;
