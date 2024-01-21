@@ -29,6 +29,7 @@
     wget
     curl
     age
+    sops
   ];
 
   virtualisation.docker.enable = true;
