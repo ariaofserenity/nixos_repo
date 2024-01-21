@@ -6,9 +6,9 @@
 
   environment.systemPackages = with pkgs; [ k3s ];
 
-  sops.secrets.k3s_token = {
-    sopsFile = ./secrets.yaml;
-  };
+  #sops.secrets.k3s_token = {
+  #  sopsFile = ./secrets.yaml;
+  #};
 
   services.k3s = {
     enable = true;
