@@ -1,7 +1,7 @@
 keys:
-   - &aria age1f6krx9zxft5lwn9va4gy4e2hl8x3eahdcyn6f32way4cvep32v7qpkch6a
+    - &dev01 age1f6krx9zxft5lwn9va4gy4e2hl8x3eahdcyn6f32way4cvep32v7qpkch6a
 creation_rules:
   - path_regex: modules/k3s/secrets.ya?ml$
     key_groups:
       - age:
-         - *aria
+         - *dev01
