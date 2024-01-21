@@ -9,10 +9,6 @@
   sops.secrets.k3s_token = {
     sopsFile = ./secrets.yaml;
   };
-
-  sops = {
-    age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
-  };
   
     services.k3s = {
     enable = true;
