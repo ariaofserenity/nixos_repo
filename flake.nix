@@ -47,7 +47,7 @@
          specialArgs = {inherit user;};
          modules = [ ./hosts/dev02
          ./modules/base-config.nix
-
+         sops-nix.nixosModules.sops
 
 	    home-manager.nixosModules.home-manager
           {
