@@ -13,7 +13,7 @@
   services.k3s = {
     enable = true;
     role = "server";
-    tokenFile = config.sops.secrets.k3s_server_token.path;
+    disableAgent = false;
     clusterInit = true;
   };
 }

@@ -5,7 +5,6 @@
     [ 
       ../../hardware-configs/dev02-hardware.nix
       ./../../modules/users.nix
-      ./../../modules/k3s/agent.nix
       ./../../modules/nfs/client.nix
     ];
 
