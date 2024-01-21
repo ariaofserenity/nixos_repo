@@ -15,7 +15,7 @@
     };
    };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, sops-nix, ... }:
     let 
        user = "aria";
        system = "x86_64-linux";
