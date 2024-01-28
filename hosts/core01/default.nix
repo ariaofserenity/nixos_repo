@@ -5,6 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./../../modules/users.nix
+      ./../../modules/k3s/server.nix
     ];
 
   networking.hostName = "core01";
