@@ -7,6 +7,7 @@
       ./../../modules/users.nix
       ./../../modules/k3s/server.nix
       ./../../modules/nfs/client.nix
+      ./../../modules/k3s/helm.nix
     ];
 
   networking.hostName = "dev01";
