@@ -41,11 +41,11 @@
         }
        ]; 
       };
-         
-        "dev02" = nixpkgs.lib.nixosSystem {
+
+        "valimar" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/dev02
+         modules = [ ./hosts/valimar
          ./modules/base-config.nix
          sops-nix.nixosModules.sops
 
