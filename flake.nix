@@ -23,10 +23,10 @@
     in {
      nixosConfigurations = {
       
-      "dev01" = nixpkgs.lib.nixosSystem {
+      "elysium" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/dev01
+         modules = [ ./hosts/elysium
          ./modules/base-config.nix
          sops-nix.nixosModules.sops
 
