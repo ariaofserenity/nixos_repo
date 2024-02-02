@@ -6,6 +6,7 @@
       ../../hardware-configs/valimar-hardware.nix
       ./../../modules/users.nix
       ./../../modules/nfs/client.nix
+      ./../../modules/startpage.nix
     ];
 
   networking.hostName = "valimar";
