@@ -1,8 +1,6 @@
 {config, pkgs, lib, inputs, user, ...}:
 
-let 
-   pubKeys = import ./pubkeys.nix;
-in {
+ {
   users.users.${user} = {
      isNormalUser = true;
      description = "${user}";
