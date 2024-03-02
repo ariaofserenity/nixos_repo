@@ -10,9 +10,9 @@
       ./../../modules/users.nix
 
       # Modules
-      ./../../modules/k3s/server.nix
+      #./../../modules/k3s/server.nix
       ./../../modules/nfs/client.nix
-      ./../../modules/k3s/helm.nix
+      #./../../modules/k3s/helm.nix
     ];
 
   networking ={
