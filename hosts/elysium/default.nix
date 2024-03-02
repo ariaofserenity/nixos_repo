@@ -15,8 +15,6 @@
       ./../../modules/k3s/helm.nix
     ];
 
-  #networking.networkmanager.enable = true;
-
   networking ={
     useDHCP = false;
     hostName = "elysium";
