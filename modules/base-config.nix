@@ -8,10 +8,10 @@
 
   time.timeZone = "America/Toronto";
 
-  networking.nameservers = {[
+  networking.nameservers = [
       "192.168.2.9"
       "8.8.8.8"
-    ]};
+    ];
 
   services.openssh = {
     enable = true;
