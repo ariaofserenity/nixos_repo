@@ -8,6 +8,11 @@
 
   time.timeZone = "America/Toronto";
 
+  networking.nameservers = {[
+      "192.168.2.9"
+      "8.8.8.8"
+    ]};
+
   services.openssh = {
     enable = true;
     settings.PasswordAuthentication = false;
@@ -30,6 +35,7 @@
     curl
     age
     sops
+    killall
   ];
 
   virtualisation.docker.enable = true;

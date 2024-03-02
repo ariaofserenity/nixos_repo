@@ -11,10 +11,6 @@
 
   networking.hostName = "valimar";
   networking.networkmanager.enable = true;
-  
-  environment.systemPackages = with pkgs; [
-    killall
-  ];
 
   system.stateVersion = "23.11"; # Did you read the comment?
 
