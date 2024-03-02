@@ -7,7 +7,7 @@
       ../../hardware-configs/valimar-hardware.nix
       
       # Users
-      ./../../modules/users.nix
+      ./../../users/aria/aria.nix
       
       # Modules
       ./../../modules/nfs/client.nix

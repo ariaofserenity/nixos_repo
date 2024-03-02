@@ -7,7 +7,7 @@
       ../../hardware-configs/elysium-hardware.nix
 
       # Users
-      ./../../modules/users.nix
+      ./../../users/aria/aria.nix
 
       # Modules
       ./../../modules/k3s/server.nix
