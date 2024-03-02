@@ -16,7 +16,7 @@
   services.openssh = {
     enable = true;
     settings.PasswordAuthentication = false;
-    settings.permitRootLogin = "yes";
+    settings.PermitRootLogin = "yes";
 
       hostKeys = [{
       path = "/etc/ssh/ssh_host_ed25519_key";
