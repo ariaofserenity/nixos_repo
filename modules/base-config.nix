@@ -22,11 +22,9 @@
       path = "/etc/ssh/ssh_host_ed25519_key";
       type = "ed25519";
     }];
-
-    security.pam.enableSSHAgentAuth = true;
   };
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  
+
+  security.pam.enableSSHAgentAuth = true;
 
   # garbage collection
   nix.gc = {
