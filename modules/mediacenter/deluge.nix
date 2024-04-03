@@ -8,6 +8,5 @@
         web = {
             enable = true;
         };
-        }
     };
 }
