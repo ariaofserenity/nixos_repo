@@ -6,6 +6,6 @@
 
     services.nginx.virtualHosts."startpage.zemuria.lan" = {
         root = "/var/www/html";
-        locations."/".proxyPass = "http://192.168.2.202/";
+        proxyPass = "http://192.168.2.202/";
     };
 }
