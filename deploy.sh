@@ -27,7 +27,8 @@ mount_fs() {
 
 generate_config() {
     nixos-generate-config --root /mnt
-    echo 'boot.loader.grub.device = "/dev/sda";' >> /mnt/etc/nixos/configuration.nix
+    awk 'NR==15{print "boot.loader.grub.device = "/dev/sda";"}1' /mnt/etc/nixos/configuration.nix
+    sed -i '15 i boot.loader.grub.device = "/dev/sda";' /mnt/etc/nixos/configuration.nix
     nixos-install
 }
 
