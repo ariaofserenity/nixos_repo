@@ -4,21 +4,19 @@
   imports =
     [ 
       # Hardware config
-      ../../hardware-configs/testarossa-hardware.nix
+      ../../hardware-configs/ordine-hardware.nix
 
       # Users
       ./../../users/aria/aria.nix
 
       # Modules
       ./../../modules/nfs/client.nix
-      ./../../modules/sonarr.nix
-      ./../../modules/radarr.nix
       ./../../modules/plex.nix
     ];
 
   networking ={
     useDHCP = false;
-    hostName = "testarossa";
+    hostName = "ordine";
 
     defaultGateway = "192.168.2.1";
 
