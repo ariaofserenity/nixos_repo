@@ -1,7 +1,7 @@
 { pkgs, ...}:
 
 {
-    services.qBittorrent = {
+    services.qbittorrent = {
         enable = true;
         openFirewall = true;
     };
