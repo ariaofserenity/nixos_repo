@@ -6,7 +6,7 @@
         openFirewall = true;
     };
 
-     services.nginx.virtualHosts."sonarr.grendel" = {
-      locations."/".proxyPass = "http://localhost:7878/";
+     services.nginx.virtualHosts."sonarr.zemuria.lan" = {
+      locations."/".proxyPass = "http://192.168.2.204:7878/";
     };
 }

@@ -6,7 +6,7 @@
         openFirewall = true;
     };
     
-    services.nginx.virtualHosts."jackett.grendel" = {
+    services.nginx.virtualHosts."jackett.zemuria.lan" = {
       locations."/".proxyPass = "http://192.168.2.204:9117/";
     };
 }

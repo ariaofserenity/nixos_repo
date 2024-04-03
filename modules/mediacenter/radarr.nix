@@ -6,7 +6,7 @@
         openFirewall = true;
     };
 
-    services.nginx.virtualHosts."radarr.grendel" = {
-      locations."/".proxyPass = "http://localhost:7878/";
+    services.nginx.virtualHosts."radarr.zemuria.lan" = {
+      locations."/".proxyPass = "http://192.168.2.204:7878/";
     };
 }
