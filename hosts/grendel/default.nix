@@ -14,7 +14,7 @@
       ./../../modules/mediacenter/radarr.nix
       ./../../modules/mediacenter/sonarr.nix
       ./../../modules/mediacenter/jackett.nix
-      ./../../modules/mediacenter/qbittorrent.nix
+      ./../../modules/mediacenter/deluge.nix
     ];
 
   networking ={
