@@ -33,7 +33,7 @@
   };
 
   sops = {
-    age.sshKeyPaths = mkDefault [ "/etc/ssh/ssh_host_ed25519_key" ];
+    age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
   };
 
   system.stateVersion = "23.11"; # Did you read the comment?
