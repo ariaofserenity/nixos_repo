@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Quick brainless script to deploy MBR NixOS hosts because im lazy
 start {
