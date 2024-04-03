@@ -2,7 +2,7 @@ keys:
     - &aria age1uqd4xcechah5zy2q90fd0t42plssnnua2fgfuw0806f9tr8qmdys4gxwvp
     - &grendel age1e6lk2n4yqyvy9yh55cj7l6v8w8z5456s2xwyenep9nga27n3au5q5y6wmd
 creation_rules:
-  - path_regex: 'modules/secrets/deluge.yaml&'
+  - path_regex: 'modules/secrets/deluge.yaml'
     key_groups:
       - age:
          - *grendel
