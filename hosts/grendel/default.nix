@@ -13,6 +13,7 @@
       ./../../modules/nfs/client.nix
       ./../../modules/radarr.nix
       ./../../modules/sonarr.nix
+      ./../../modules/jackett.nix
     ];
 
   networking ={
