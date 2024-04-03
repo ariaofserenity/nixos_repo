@@ -19,6 +19,8 @@
 
   };
 
+   nixpkgs.config.allowUnfree = true;
+
   # garbage collection
   nix.gc = {
                 automatic = true;
