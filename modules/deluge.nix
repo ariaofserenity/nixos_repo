@@ -28,6 +28,6 @@
       listen_ports = [6881 6889];
       random_port = false;
     };
-    authFile = config.sops.secrets.deluge-auth;
+    authFile = config.sops.secrets.deluge-auth.path;
     };
 }
