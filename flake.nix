@@ -26,8 +26,8 @@
       "elysium" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/elysium
-         ./modules/base-config.nix
+         modules = [ ./systems/elysium
+         ./nixos/base-config.nix
          sops-nix.nixosModules.sops
 
 
@@ -37,7 +37,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = {inherit user;};
-            home-manager.users.${user} = import ./modules/home.nix;
+            home-manager.users.${user} = import ./nixos/home.nix;
         }
        ]; 
       };
@@ -45,8 +45,8 @@
         "valimar" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/valimar
-         ./modules/base-config.nix
+         modules = [ ./systems/valimar
+         ./nixos/base-config.nix
          sops-nix.nixosModules.sops
 
 	    home-manager.nixosModules.home-manager
@@ -55,7 +55,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = {inherit user;};
-            home-manager.users.${user} = import ./modules/home.nix;
+            home-manager.users.${user} = import ./nixos/home.nix;
         }
        ]; 
       };
@@ -63,8 +63,8 @@
       "ordine" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/ordine
-         ./modules/base-config.nix
+         modules = [ ./systems/ordine
+         ./nixos/base-config.nix
          sops-nix.nixosModules.sops
 
 	    home-manager.nixosModules.home-manager
@@ -73,7 +73,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = {inherit user;};
-            home-manager.users.${user} = import ./modules/home.nix;
+            home-manager.users.${user} = import ./nixos/home.nix;
         }
        ]; 
       };
@@ -81,8 +81,8 @@
       "grendel" = nixpkgs.lib.nixosSystem {
          inherit system;
          specialArgs = {inherit user;};
-         modules = [ ./hosts/grendel
-         ./modules/base-config.nix
+         modules = [ ./systems/grendel
+         ./nixos/base-config.nix
          sops-nix.nixosModules.sops
 
 	    home-manager.nixosModules.home-manager
@@ -91,7 +91,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = {inherit user;};
-            home-manager.users.${user} = import ./modules/home.nix;
+            home-manager.users.${user} = import ./nixos/home.nix;
         }
        ]; 
       };

@@ -3,26 +3,26 @@
 {
   imports =
     [ 
-      # Hardware config
-      ../../hardware-configs/ordine-hardware.nix
-
+      # hardware
+      ../../hardware-configs/valimar-hardware.nix
+      
       # Users
       ./../../users/aria/aria.nix
-
+      
       # Modules
-      ./../../modules/nfs/client.nix
-      ./../../modules/mediacenter/plex.nix
+      ./../../modules/nfs.nix
+      ./../../modules/startpage.nix
     ];
 
   networking ={
     useDHCP = false;
-    hostName = "ordine";
+    hostName = "valimar";
 
     defaultGateway = "192.168.2.1";
 
     interfaces.ens18.ipv4 = {
       addresses = [{
-        address = "192.168.2.203";
+        address = "192.168.2.202";
         prefixLength = 24;
       }];
     };
@@ -31,3 +31,4 @@
   system.stateVersion = "23.11"; # Did you read the comment?
 
 }
+

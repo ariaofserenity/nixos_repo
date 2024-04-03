@@ -4,29 +4,26 @@
   imports =
     [ 
       # Hardware config
-      ../../hardware-configs/grendel-hardware.nix
+      ../../hardware-configs/elysium-hardware.nix
 
       # Users
       ./../../users/aria/aria.nix
 
       # Modules
-      ./../../modules/nfs/client.nix
-      ./../../modules/nginx.nix
-      ./../../modules/mediacenter/radarr.nix
-      ./../../modules/mediacenter/sonarr.nix
-      ./../../modules/mediacenter/jackett.nix
-      ./../../modules/mediacenter/deluge.nix
+      ./../../modules/k3s/server.nix
+      ./../../modules/nfs.nix
+      ./../../modules/k3s/helm.nix
     ];
 
   networking ={
     useDHCP = false;
-    hostName = "grendel";
+    hostName = "elysium";
 
     defaultGateway = "192.168.2.1";
 
     interfaces.ens18.ipv4 = {
       addresses = [{
-        address = "192.168.2.204";
+        address = "192.168.2.201";
         prefixLength = 24;
       }];
     };
