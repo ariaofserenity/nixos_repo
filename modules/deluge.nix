@@ -1,6 +1,11 @@
 { pkgs, ...}:
 
 {
+
+    sops.secrets.deluge-auth = {
+    sopsFile = mkDefault ./secrets/deluge.yaml;
+    };
+
     services.deluge = {
         enable = true;
         declarative = true;
@@ -23,5 +28,6 @@
       listen_ports = [6881 6889];
       random_port = false;
     };
+    authFile = config.sops.secrets.deluge-auth;
     };
 }
