@@ -4,7 +4,7 @@
   imports =
     [ 
       # Hardware config
-      ../../hardware-configs/ordine-hardware.nix
+      ./ordine-hardware.nix
 
       # Users
       ./../../users/aria/aria.nix

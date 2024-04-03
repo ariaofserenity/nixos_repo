@@ -4,7 +4,7 @@
   imports =
     [ 
       # Hardware config
-      ../../hardware-configs/elysium-hardware.nix
+      ./elysium-hardware.nix
 
       # Users
       ./../../users/aria/aria.nix

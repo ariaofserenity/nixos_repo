@@ -4,7 +4,7 @@
   imports =
     [ 
       # hardware
-      ../../hardware-configs/valimar-hardware.nix
+      ./valimar-hardware.nix
       
       # Users
       ./../../users/aria/aria.nix

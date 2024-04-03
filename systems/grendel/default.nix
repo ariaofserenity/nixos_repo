@@ -4,7 +4,7 @@
   imports =
     [ 
       # Hardware config
-      ../../hardware-configs/grendel-hardware.nix
+      ./grendel-hardware.nix
 
       # Users
       ./../../users/aria/aria.nix
