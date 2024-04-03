@@ -7,6 +7,6 @@
     };
     
     services.nginx.virtualHosts."jackett.grendel" = {
-      locations."/".proxyPass = "http://localhost:9117/";
+      locations."/".proxyPass = "http://192.168.2.204:9117/";
     };
 }
