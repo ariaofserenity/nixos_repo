@@ -8,7 +8,7 @@ creation_rules:
       - age:
          - *aria
          - *elysium
-  - path_regex: modules/mediacenter/deluge.ya?ml$
+  - path_regex: modules/mediacenter/deluge.txt
     key_groups:
       - age:
          - *grendel
