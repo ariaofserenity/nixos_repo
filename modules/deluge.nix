@@ -3,7 +3,7 @@
 {
 
     sops.secrets.deluge-auth = {
-    sopsFile = mkDefault ./secrets/deluge.yaml;
+    sopsFile = ./secrets/deluge.yaml;
     };
 
     services.deluge = {
