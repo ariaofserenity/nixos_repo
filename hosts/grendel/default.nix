@@ -11,9 +11,10 @@
 
       # Modules
       ./../../modules/nfs/client.nix
-      ./../../modules/radarr.nix
-      ./../../modules/sonarr.nix
-      ./../../modules/jackett.nix
+      ./../../modules/mediacenter/radarr.nix
+      ./../../modules/mediacenter/sonarr.nix
+      ./../../modules/mediacenter/jackett.nix
+      ./../../modules/mediacenter/qbittorrent.nix
     ];
 
   networking ={
