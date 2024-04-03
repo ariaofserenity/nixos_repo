@@ -5,7 +5,7 @@
         enable = true;
         openFirewall = true;
 
-        web {
+        web = {
             enable = true;
         };
         }
