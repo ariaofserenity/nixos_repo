@@ -6,6 +6,8 @@
     sopsFile = ./secrets/deluge.yaml;
     };
 
+    networking.firewall.allowedTCPPorts = [ 8112 ];
+
     services.deluge = {
         enable = true;
         declarative = true;
