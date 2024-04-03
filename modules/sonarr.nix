@@ -7,6 +7,6 @@
     };
 
      services.nginx.virtualHosts."sonarr.zemuria.lan" = {
-      locations."/".proxyPass = "http://192.168.2.204:7878/";
+      locations."/".proxyPass = "http://192.168.2.204:8989/";
     };
 }
