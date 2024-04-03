@@ -11,7 +11,7 @@
 
       # Modules
       ./../../modules/nfs/client.nix
-      ./../../modules/plex.nix
+      ./../../modules/mediacenter/plex.nix
     ];
 
   networking ={
