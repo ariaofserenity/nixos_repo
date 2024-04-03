@@ -2,8 +2,6 @@
 
 # Quick brainless script to deploy MBR NixOS hosts because im lazy
 
-host = $1
-
 create_partition_table {
     parted /dev/sda -- mklabel msdos
     parted /dev/sda -- mkpart primary 1MB -8GB
