@@ -11,6 +11,7 @@
 
       # Modules
       ./../../modules/nfs/client.nix
+      ./../../modules/nginx.nix
       ./../../modules/mediacenter/radarr.nix
       ./../../modules/mediacenter/sonarr.nix
       ./../../modules/mediacenter/jackett.nix

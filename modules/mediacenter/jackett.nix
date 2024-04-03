@@ -6,7 +6,7 @@
         openFirewall = true;
     };
     
-    services.nginx.virtualHosts."grendel/jackett" = {
+    services.nginx.virtualHosts."jackett.grendel" = {
       locations."/".proxyPass = "http://localhost:9117/";
     };
 }
