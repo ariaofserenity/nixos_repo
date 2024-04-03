@@ -10,6 +10,8 @@
         enable = true;
         declarative = true;
         openFirewall = true;
+        user = "root";
+        group = "root";
 
         web = {
             enable = true;
