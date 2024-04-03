@@ -1,7 +1,7 @@
 { pkgs, ...}:
 
 {
-    services.plex = {
+    services.qBittorrent = {
         enable = true;
         openFirewall = true;
     };
