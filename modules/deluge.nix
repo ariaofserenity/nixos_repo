@@ -31,6 +31,7 @@
       daemon_port = 58846;
       listen_ports = [6881 6889];
       random_port = false;
+      enabled_plugins = [ "Label" ];
     };
     authFile = config.sops.secrets.deluge-auth.path;
     };
