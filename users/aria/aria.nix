@@ -14,6 +14,7 @@
        vim
        tree
        traceroute
+       htop
       ];
    };
 
