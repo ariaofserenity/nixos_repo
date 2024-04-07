@@ -11,6 +11,7 @@
 
       # Modules
       ./../../modules/nfs.nix
+      ./../../modules/nginx.nix
       ./../../modules/plex.nix
     ];
 
