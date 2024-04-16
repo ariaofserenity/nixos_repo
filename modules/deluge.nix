@@ -21,6 +21,7 @@
         
         config = {
       max_upload_speed = 15.0;
+      download_location = "/mnt/media/downloads";
       max_connections_global = 1024;
       max_connections_per_second = 50;
       max_active_limit = 100;
